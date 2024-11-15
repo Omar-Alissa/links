@@ -1,0 +1,116 @@
+/* Grundläggande stil för sidan */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b1b1b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Container för profilbild och sociala länkar */
+.container {
+  text-align: center;
+  background-color: rgb(122, 120, 120);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Profilbild som länk */
+.profile-link {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  transition: transform 0.3s, border 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  border-color: #333;
+}
+
+/* Sociala medielänkar */
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Allmän stil för sociala ikoner */
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon i {
+  color: #fff; /* Se till att ikonerna är vita */
+}
+
+/* Färger för respektive socialt nätverk */
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #00acee;
+}
+
+.instagram {
+  background-color: #e4405f;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.youtube {
+  background-color: #ff0000;
+}
+
+/* Hover-effekt för sociala ikoner */
+.social-icon:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+  .social-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-icon {
+      margin: 10px 0;
+      width: 50px;
+      height: 50px;
+      font-size: 1.5em;
+  }
+
+  .profile-img {
+      width: 80px;
+      height: 80px;
+  }
+}
